@@ -1,0 +1,5 @@
+Wait(Delay(0.1))
+torch:EnableUsage()
+Wait(Event(torch.Used))
+Wait(torch:PlayAnimWait("Open", 0, 0))
+loweringFence:Open()

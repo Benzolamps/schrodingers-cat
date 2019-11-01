@@ -1,0 +1,37 @@
+terminal when (Booting) {
+  notext
+  goto: TokiTori1
+}
+
+terminal when (TokiTori1) {
+  text: "TTRS:notran=%e1"
+  	options: {
+		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori2
+	}
+}
+
+terminal when (TokiTori2) {
+  text: "TTRS:notran=%e2"
+  	options: {
+		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori3
+	}
+}
+
+terminal when (TokiTori3) {
+  text: "TTRS:notran=%e3"
+  	options: {
+		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori4
+	}
+}
+
+terminal when (TokiTori4) {
+  text: "TTRS:notran=%e4"
+  	options: {
+		"" short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
+	}
+}
+
+terminal when (Exit) {
+  notext
+  exit
+}

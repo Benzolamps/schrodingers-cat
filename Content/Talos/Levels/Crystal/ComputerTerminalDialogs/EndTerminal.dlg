@@ -1,0 +1,55 @@
+terminal when (StoryEnd and not Cat_Free) {
+	text:
+	[[TTRS:CrystalTerminal.DidntFind= didn't find his cat in the end, but he wasn't too sad. %w14He knows there is a long road in life. %w14He wants to be a little bit stronger in the next days. %w25
+]]
+}
+
+terminal when (StoryEnd and Cat_Free and Shrimps_0) {
+	text:
+	[[TTRS:CrystalTerminal.SufficientFood= found his cat in the end. %w14But the little kitten didn't survive. %w14He doesn't know what he did wrong. %w14he didn't prepare sufficient food for it. %w14The kitten's leaving was a big worry for him. %w14He hasn't eased his mind for a long time. %w25
+]]
+}
+
+terminal when (StoryEnd and Cat_Free and Shrimps_1 and Iodine) {
+	text:
+	[[TTRS:CrystalTerminal.HardWon= found his cat in the end. %w14The kitten survived. His efforts were not wasted. %w14The lovely cat went back to him. %w14Their relationship is hard-won. They will appreciate each other more. %w25
+]]	
+}
+
+terminal when (StoryEnd and Cat_Free and Shrimps_1 and not Iodine) {
+	text:
+	[[TTRS:CrystalTerminal.Injurd= found his cat in the end. %w14But the little kitten didn't survive. %w14He doesn't know what he did wrong. %w14He dosen't know why it was injurd. %w14The kitten's leaving was a big worry for him. %w14(S)he hasn't eased his mind for a long time. %w25
+]]	
+}
+
+terminal when (StoryEnd and Cat_Free and Shrimps_2 and Probiotics) {
+	text:
+	[[TTRS:CrystalTerminal.HardWon= found his cat in the end. %w14The kitten survived. His efforts were not wasted. %w14The lovely cat went back to him. %w14Their relationship is hard-won. They will appreciate each other more. %w25
+]]	
+}
+
+terminal when (StoryEnd and Cat_Free and Shrimps_2 and not Probiotics) {
+		text:
+	[[TTRS:CrystalTerminal.EatenOff=found his cat in the end. %w14But the little kitten didn't survive. %w14He doesn't know what he did wrong. %w14He dosen't know why it had eaten something a little off. %w14The kitten's leaving was a big worry for him. %w14He hasn't eased his mind for a long time. %w25
+]]
+}
+
+terminal when (Credits) {
+	text:
+	[[TTRS:CrystalTerminal.Credits=
+CREDITS
+
+Author: 苯拉灯
+
+Special Thanks: 
+  iRedCraft
+  p0rtalmaster
+  Innocentive
+  Barry Mead
+  vodkins 
+  Kazz
+  Rusty
+  gabberovich
+
+  .%w3.%w3.%w3.%w3.%w3.%w8%w8%w8]]
+}

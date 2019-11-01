@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SeriousEngineFile Loader="CXMLResourceFileType">
+  <TetrominoInstances>
+    <TetrominoInstances counthint="256">
+		<TetrominoInstanceData>
+			<Name>ET1</Name>
+			<NeededMechanics>C</NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle></Puzzle>
+			<PuzzleTitle>"TTRS:notrans=Unlock Cube"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>ET2</Name>
+			<NeededMechanics>F</NeededMechanics>
+			<Level>Chapter_002</Level>
+			<Puzzle></Puzzle>
+			<PuzzleTitle>"TTRS:notrans=Unlock Fan"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>ET3</Name>
+			<NeededMechanics>R</NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle></Puzzle>
+			<PuzzleTitle>"TTRS:notrans=Unlock Rods"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>ET4</Name>
+			<NeededMechanics>T</NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle></Puzzle>
+			<PuzzleTitle>"TTRS:notrans=Unlock Time"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>DL1</Name>
+			<NeededMechanics>C</NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>103</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.001=Guards Are Friends Too!"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MO1</Name>
+			<NeededMechanics>F</NeededMechanics>
+			<Level>Chapter_002</Level>
+			<Puzzle>201</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.002=Moonlet"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MS2</Name>
+			<NeededMechanics>C</NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>101</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.003=Moreover"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MO3</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>102</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.004=One Arrow, Double Hawks"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MT4</Name>
+			<NeededMechanics>C</NeededMechanics>
+			<Level>Chapter_002</Level>
+			<Puzzle>203</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.005=Break Jamming"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MJ5</Name>
+			<NeededMechanics>FCR</NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle>301</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.006=Gap"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>MZ6</Name>
+			<NeededMechanics>R</NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle>402</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.007=Close the Door Behind You"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>ML7</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>104</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.008=C'est La Vie"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NJ1</Name>
+			<NeededMechanics>FC</NeededMechanics>
+			<Level>Chapter_002</Level>
+			<Puzzle>202</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.009=Halloween"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NL2</Name>
+			<NeededMechanics>CR</NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle>302</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.010=Suspend"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NT3</Name>
+			<NeededMechanics>FCR</NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle>303</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.011=Milky Way Lovers"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NS4</Name>
+			<NeededMechanics>TR</NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle>401</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.012=Draw back"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NI5</Name>
+			<NeededMechanics>TFCR</NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle>403</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.013=Teeterboard"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NJ6</Name>
+			<NeededMechanics>TFC</NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>501</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.014=Split Personality"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NL7</Name>
+			<NeededMechanics>R</NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>503</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.015=Two Colors, Two Doors"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NI8</Name>
+			<NeededMechanics>FCR</NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>502</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.016=Plagued by Crises"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NO9</Name>
+			<NeededMechanics>C</NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>504</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.017=Domino"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NT10</Name>
+			<NeededMechanics>TFC</NeededMechanics>
+			<Level>Chapter_006</Level>
+			<Puzzle>601</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.018=Apophi"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NJ11</Name>
+			<NeededMechanics>FC</NeededMechanics>
+			<Level>Chapter_006</Level>
+			<Puzzle>602</Puzzle> 
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.019=Detour"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>NZ12</Name>
+			<NeededMechanics>TCR</NeededMechanics>
+			<Level>Chapter_006</Level>
+			<Puzzle>603</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.020=Poppy in Tears"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name></Name>
+			<NeededMechanics>TFCR</NeededMechanics>
+			<Level>Hub</Level>
+			<Puzzle>0003</Puzzle>
+			<PuzzleTitle>"TTRS:CrystalPuzzleName.021=Schrodinger's Cat"</PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**1</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>100</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**2</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_001</Level>
+			<Puzzle>103</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**3</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_002</Level>
+			<Puzzle>203</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**4</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle>302</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**5</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_003</Level>
+			<Puzzle>300</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**6</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle>401</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**7</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_004</Level>
+			<Puzzle>400</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+				<TetrominoInstanceData>
+			<Name>**8</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>502</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**9</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_005</Level>
+			<Puzzle>501</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+		<TetrominoInstanceData>
+			<Name>**10</Name>
+			<NeededMechanics></NeededMechanics>
+			<Level>Chapter_006</Level>
+			<Puzzle>600</Puzzle>
+			<PuzzleTitle></PuzzleTitle>
+			<PuzzleHint></PuzzleHint>
+			<TetrominoPos>0.0000 0.0000</TetrominoPos>
+			<MedianDuration>-2</MedianDuration>
+		</TetrominoInstanceData>
+    </TetrominoInstances>
+    <Arrangers counthint="64">
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Door_Dome.rsc"</CPuzzleData>
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Mechanic_Fan.rsc"</CPuzzleData>
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Mechanic_Rods.rsc"</CPuzzleData>
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Mechanic_Time.rsc"</CPuzzleData>
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Nexus_A.rsc"</CPuzzleData>
+      <CPuzzleData>"TFNM:Content/Talos/Databases/Arrangers/Nexus_B.rsc"</CPuzzleData>
+    </Arrangers>
+  </TetrominoInstances>
+</SeriousEngineFile>

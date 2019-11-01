@@ -1,0 +1,246 @@
+# Unlocked_Rod代表是否解锁了连接器
+
+terminal when (Booting and not Unlocked_Rod) {
+	notext
+	goto: Tips
+}
+
+terminal when (Booting and Unlocked_Rod) {
+	notext
+	goto: Success
+}
+
+terminal when (Tips) {
+	prompt:
+	[[TTRS:CrystalTerminal.RodTip=This terminal will help you unlocking the <span class="strong">&lt;Connector&gt;</span> item! .%w3.%w3.%w8
+Ready to Start? .%w3.%w3.%w8
+>]]
+	setlocal: Question1
+	options: {
+		"TTRS:CrystalTerminal.Ready=Yes, I am ready!" 	short: "TTRS:CrystalTerminal.ReadyShort=Ready" 		next: Question
+		"TTRS:CrystalTerminal.NotYet=Not yet!" 			short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
+	}
+}
+
+terminal when (Question and not Try_Once) {
+	text:
+	[[TTRS:CrystalTerminal.SixNumber=
+3.%w1.%w1.%w1
+2.%w1.%w1.%w1
+1.%w1.%w1.%w1 
+
+Six numbers. Their sum equals to 100, and each of them contains 6. What is the numbers? .%w3.%w3.%w8]]
+    setlocal: Answer1
+	goto: Answer
+}
+
+terminal when (Question and Try_Once) {
+	prompt:
+	[[TTRS:CrystalTerminal.SixNumberNeedHint=
+3.%w1.%w1.%w1
+2.%w1.%w1.%w1
+1.%w1.%w1.%w1 
+
+Six numbers. Their sum equals to 100, and each of them contains 6. What is the numbers? .%w3.%w3.%w8
+
+Need some Hints? %w8
+>]]
+	setlocal: Answer1
+    options: {
+		"TTRS:CrystalTerminal.Yes=Yes" 				short: "TTRS:CrystalTerminal.Yes=Yes" 			next: Hint
+		"TTRS:CrystalTerminal.No=No" 				short: "TTRS:CrystalTerminal.No=No" 			next: Answer
+	}
+}
+
+terminal when (Answer and Answer1) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter1=
+Enter the first number.%w3.%w3.%w8
+>]]
+	clear: Answer1
+	setlocal: Answer2
+	goto: Options    
+}
+
+terminal when (Answer and Answer2) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter2=
+Enter the second number.%w3.%w3.%w8
+>]]
+	clear: Answer2
+	setlocal: Answer3
+	goto: Options    
+}
+
+terminal when (Answer and Answer3) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter3=
+Enter the third number.%w3.%w3.%w8
+>]]
+	clear: Answer3
+	setlocal: Answer4
+	goto: Options    
+}
+
+terminal when (Answer and Answer4) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter4=
+Enter the fourth number.%w3.%w3.%w8
+>]]
+	clear: Answer4
+	setlocal: Answer5
+	goto: Options    
+}
+
+terminal when (Answer and Answer5) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter5=
+Enter the fifth number.%w3.%w3.%w8
+>]]
+	clear: Answer5
+	setlocal: Answer6
+	goto: Options    
+}
+
+terminal when (Answer and Answer6) {
+	prompt:
+	[[TTRS:CrystalTerminal.Enter6=
+%e6Enter the sixth number.%w3.%w3.%w8
+>]]
+	# e6用于计算剩余数字，可以在输入完最后一个数字时判断是否匹配
+	clear: Answer6
+	setlocal: Judge
+	goto: Options    
+}
+
+terminal when (Answer and Judge) {
+	notext 
+	goto: Result
+}
+
+terminal when (Result and Number_True) {
+	text: "TTRS:notrans=%e7.%w3.%w3.%w8"
+	goto: Success
+}
+
+terminal when (Result and not Number_True) {
+	text: "TTRS:notrans=%e7.%w3.%w3.%w8"
+	goto: Fail
+}
+
+terminal when (Options) {
+	notext
+	options: {
+		"TTRS:notrans=6" 				short: "TTRS:notrans=6" 			next: Number_6
+		"TTRS:notrans=16" 				short: "TTRS:notrans=16" 			next: Number_16
+		"TTRS:notrans=26" 				short: "TTRS:notrans=26" 			next: Number_Other
+		"TTRS:notrans=36" 				short: "TTRS:notrans=36" 			next: Number_Other
+		"TTRS:notrans=46" 				short: "TTRS:notrans=46" 			next: Number_Other
+		"TTRS:notrans=56" 				short: "TTRS:notrans=56" 			next: Number_Other
+		"TTRS:notrans=60" 				short: "TTRS:notrans=60" 			next: Number_60
+		"TTRS:notrans=61" 				short: "TTRS:notrans=61" 			next: Number_Other
+		"TTRS:notrans=62" 				short: "TTRS:notrans=62" 			next: Number_Other
+		"TTRS:notrans=63" 				short: "TTRS:notrans=63" 			next: Number_Other
+		"TTRS:notrans=64" 				short: "TTRS:notrans=64" 			next: Number_Other
+		"TTRS:notrans=65" 				short: "TTRS:notrans=65" 			next: Number_Other
+		"TTRS:notrans=66" 				short: "TTRS:notrans=66" 			next: Number_Other
+		"TTRS:notrans=67" 				short: "TTRS:notrans=67" 			next: Number_Other
+		"TTRS:notrans=68" 				short: "TTRS:notrans=68" 			next: Number_Other
+		"TTRS:notrans=69" 				short: "TTRS:notrans=69" 			next: Number_Other
+		"TTRS:notrans=76" 				short: "TTRS:notrans=76" 			next: Number_Other
+		"TTRS:notrans=86" 				short: "TTRS:notrans=86" 			next: Number_Other
+		"TTRS:notrans=96" 				short: "TTRS:notrans=96" 			next: Number_Other
+	}
+}
+
+terminal when (Number_6 and not Need_6) {
+	text: "TTRS:notrans=%e2"
+	# e2代表用户输入了6
+	goto: Answer
+}
+
+terminal when (Number_16 and not Need_16) {
+	text: "TTRS:notrans=%e3"
+	# e3代表用户输入了16
+	goto: Answer
+}
+
+terminal when (Number_60 and not Need_60) {
+	text: "TTRS:notrans=%e4"
+	# e4代表用户输入了60
+	goto: Answer
+}
+
+terminal when (Number_6 and Need_6) {
+	text: "TTRS:notrans=%e2"
+	# e2代表用户输入了6
+	setlocal: Number_True
+	goto: Answer
+}
+
+terminal when (Number_16 and Need_16) {
+	text: "TTRS:notrans=%e3"
+	# e3代表用户输入了16
+	setlocal: Number_True
+	goto: Answer
+}
+
+terminal when (Number_60 and Need_60) {
+	text: "TTRS:notrans=%e4"
+	# e4代表用户输入了60
+	setlocal: Number_True
+	goto: Answer
+}
+
+terminal when (Number_Other) {
+	text: "TTRS:notrans=%e5"
+	# e5代表用户输入了其他数字
+	goto: Answer
+}
+
+terminal when (Success) {
+	set: Unlocked_Rod
+	prompt:
+	[[TTRS:CrystalTerminal.CongratulateRod=
+%e1Congratulations! You have unlocked the <span class="strong">&lt;Connector&gt;</span> item! %s0.%w3.%w3.%w8
+>]]
+	options: {
+		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
+	} 
+}
+
+terminal when (Fail) {
+	set: Try_Once
+	prompt:
+	[[TTRS:CrystalTerminal.PityRod=
+Unfortunately! The number you provided are wrong! .%w3.%w3.%w8
+Try Again? .%w3.%w3.%w8
+>]]
+    options: {
+		"TTRS:CrystalTerminal.Yes=Yes" 				short: "TTRS:CrystalTerminal.Yes=Yes" 			next: Question
+		"TTRS:CrystalTerminal.No=No" 				short: "TTRS:CrystalTerminal.No=No" 			next: Exit
+	}
+}
+
+terminal when (Hint and not Hint_Once) {
+	set: Hint_Once
+	text:
+	[[TTRS:CrystalTerminal.SixNumberHint1=
+Hint 1: No numbers more than 70.%w8]]
+	goto: Answer
+}
+
+terminal when (Hint and Hint_Once) {
+	text:
+	[[TTRS:CrystalTerminal.SixNumberHint2=
+Hint 1: No numbers more than 70.%w8
+
+Hint 2: Four of them are equals.%w8
+	]]
+	goto: Answer
+}
+
+terminal when (Exit) {
+	notext
+	exit
+}

@@ -1,0 +1,129 @@
+# Unlocked_Cube代表是否解锁了方块
+
+terminal when (Booting) {
+	notext
+	goto: Tips
+}
+
+terminal when (Tips and Cat_Free and not Knowing_Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.FoundCat=Have you found your Cat?
+>]]
+	set: Knowing_Cat_Free
+
+	options: {
+		"TTRS:CrystalTerminal.YesIHave=Yes, I have! It's here. " 	
+		short: "TTRS:CrystalTerminal.YesIHaveShort=Yes" 		next: Request_Leave
+	}
+}
+
+terminal when (Tips and not Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.FoundCat=Have you found your Cat?
+>]]
+	options: {
+		"TTRS:CrystalTerminal.NotFound=No! I counldn't find it." 	
+		short: "TTRS:CrystalTerminal.NotFoundShort=No" 		next: Request_Leave
+	}
+}
+
+terminal when (Knowing_Cat_Free and Tips) {
+	prompt:
+	[[TTRS:CrystalTerminal.WantToLeave=Do you want to leave now?
+>]]
+	options: {
+		"TTRS:CrystalTerminal.NotReadyLeave=Not ready." 					
+		short: "TTRS:CrystalTerminal.NotReadyLeaveShort=No" 		next: Exit
+		"TTRS:CrystalTerminal.LeaveWithoutDelay=Ok, I want to leave without delay."
+		short: "TTRS:CrystalTerminal.LeaveWithoutDelay.Short=Yes" next: Spaceship_Intro
+	}
+}
+
+terminal when (Request_Leave and Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.WantToLeaveCongratulate=Oh, Congratulations! Do you want to leave now?
+>]]
+		options: {
+		"TTRS:CrystalTerminal.NotReadyLeave=Not ready." 					
+		short: "TTRS:CrystalTerminal.NotReadyLeaveShort=No" 			next: Exit
+		"TTRS:CrystalTerminal.LeaveWithoutDelay=Ok, I want to leave without delay."
+		short: "TTRS:CrystalTerminal.LeaveWithoutDelay.Short=Yes" 		next: Spaceship_Intro
+	}
+}
+
+terminal when (Request_Leave and not Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.WantToLeavePity=Oh, what a pity! Do you want to leave now?
+>]]
+	options: {
+		"TTRS:CrystalTerminal.ContinueFinding=I want to continue finding my cat." 					
+		short: "TTRS:CrystalTerminal.NotReadyLeaveShort=No" 			next: Exit
+		"TTRS:CrystalTerminal.GiveeUpFinding=OK! It is not the whole of my life."					
+		short: "TTRS:CrystalTerminal.LeaveWithoutDelay.Short=Yes"		next: Spaceship_Intro
+	}
+}
+
+terminal when (Spaceship_Intro) {
+	prompt:
+	[[TTRS:CrystalTerminal.SpaceshipIntro=%e0OK! We prepared a spaceship for everyone who successfully passed the test. It can take you return your world!
+>]]
+	options: {
+		"TTRS:CrystalTerminal.Honored=I'm honored to be one of them." 					
+		short: "TTRS:CrystalTerminal.Honored=I'm honored to be one of them." 		next: Spaceship_Conditions
+	}
+}
+
+terminal when (Spaceship_Conditions and Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.SpaceshipConditions=But it will take you seven days to get back to your world! The good news is that the special gas in the cabin allows you to reduce your energy consumption to infinity zero, that means you can skip meals for a year.
+>]]
+	options: {
+		"TTRS:CrystalTerminal.AboutMyCat=That is awesome! How about my cat?" 					
+		short: "TTRS:CrystalTerminal.AboutMyCatShort=Your Cat" 		next: Spaceship_Limits
+	}
+}
+
+terminal when (Spaceship_Conditions and not Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.SpaceshipConditions=But it will take you seven days to get back to your world! The good news is that the special gas in the cabin allows you to reduce your energy consumption to infinity zero, that means you can skip meals for a year.
+>]]
+	options: {
+		"TTRS:CrystalTerminal.Awesome=That is awesome!" 					
+		short: "TTRS:CrystalTerminal.AwesomeShort=Awesome" 		next: Spaceship_Limits
+	}
+}
+
+terminal when (Spaceship_Limits and Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.ForHumans=This particular gas is only effective for humans. I hope you prepared food for your cat. 
+Another point to keep in mind, this ship will explode after reaching your world.
+>]]
+	options: {
+		"TTRS:CrystalTerminal.CanNotWait=I can not wait!" 
+		short: "TTRS:CrystalTerminal.CanNotWait=I can not wait!" next: Open_Door
+	}
+}
+
+terminal when (Spaceship_Limits and not Cat_Free) {
+	prompt:
+	[[TTRS:CrystalTerminal.AnotherPoint=Another point to keep in mind, this ship will explode after reaching your world.
+>]]
+	options: {
+		"TTRS:CrystalTerminal.CanNotWait=I can not wait!" 
+		short: "TTRS:CrystalTerminal.CanNotWait=I can not wait!" next: Open_Door
+	}
+}
+
+terminal when (Open_Door) {
+	prompt:
+	[[TTRS:CrystalTerminal.WaitAMinute=Wait a minute! I will open the door for you. Have a nice trip!%w8
+>]]
+	options: {
+		"TTRS:CrystalTerminal.OK=OK!" short: "TTRS:notrans=OK" next: Exit
+	}
+}
+
+terminal when (Exit) {
+	notext
+	exit
+}

@@ -4,10 +4,9 @@ terminal when (Booting) {
 }
 
 terminal when (Tips) {
-  prompt: [[TTRS:CrystalTerminal.CodeTip=
-This fence is protected with a code. %w9
-Please enter the code: %w9
-]]
+  prompt: [[TTRS:CrystalTerminal.CodeTip=This fence is protected with a code.%w9
+Please enter the code:%w9
+>]]
   goto: Code_Try1
 }
 
@@ -16,11 +15,10 @@ terminal when (Code_Try1) {
 }
 
 terminal when (Wrong_Code_Try1) {
-  prompt: [[TTRS:CrystalTerminal.CodeTry1=
-Code incorrect! %s0%w9
-Try Again (2 more tries left). %w9
-Please enter the code: %w9
-]]
+  prompt: [[TTRS:CrystalTerminal.CodeTry1=Code incorrect!%s0%w9
+Try Again (2 more tries left).%w9
+Please enter the code:%w9
+>]]
   goto: Code_Try2
 }
 
@@ -29,11 +27,10 @@ terminal when (Code_Try2) {
 }
 
 terminal when (Wrong_Code_Try2) {
-  prompt: [[TTRS:CrystalTerminal.CodeTry2=
-Code incorrect! %s0%w9
-Try Again (1 more tries left). %w9
-Please enter the code: %w9
-]]
+  prompt: [[TTRS:CrystalTerminal.CodeTry2=Code incorrect!%s0%w9
+Try Again (1 more tries left).%w9
+Please enter the code:%w9
+>]]
   goto: Code_Try3
 }
 
@@ -42,37 +39,36 @@ terminal when (Code_Try3) {
 }
 
 terminal when (Wrong_Code_Try3) {
-  text: [[TTRS:CrystalTerminal.CodeFailed=
-Code incorrect! %s0%w9
-Too many failed attempts. %w9
-Exiting session. %w9%e1
-]]
+  prompt: [[TTRS:CrystalTerminal.CodeFailed=Code incorrect!%s0%w9
+Too many failed attempts.%w9
+Exiting session.%w9%e1
+>]]
   options: {
-    "TTRS:notrans=qwertyuiopasdfghjklzxcvbnm" short: "TTRS:CrystalTerminal.HackIt=Hack it" next: Get_Code
+    "TTRS:notrans=SELECT code FROM sys_dev" short: "TTRS:CrystalTerminal.HackIt=Hack it" next: Get_Code
   }
 }
 
 terminal when (Get_Code) {
-  text: [[TTRS:CrystalTerminal.HackProcess=
-.%w9.%w9.%w9.%w9.%w9.%w9%w9
+  prompt: [[TTRS:CrystalTerminal.HackProcess=Querying.%w9.%w9.%w9.%w9.%w9
+Done.%w9
 
-%o"Code_Star"
+▓▓▓▓▓▓▓▓▓▓▓▓▓%w9
+▓▓   %o"Code_Star"   ▓▓%w9
+▓▓▓▓▓▓▓▓▓▓▓▓▓%w9
 
-.%w3.%w3.%w3
-
-WARNING: Illegal user tries to access system detected! %w9
-Code has been resetted. %w9
-]]
+WARNING: Illegal user access detected!%w9
+Resetting code.%w3.%w3.%w3.%w3.%w3%w9
+Done.%w9%e6
+>]]
   options: {
     "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
   }
 }
 
 terminal when (Code_OK) {
-  text: [[TTRS:CrystalTerminal.CodeAccepted=
-Code accepted. %w9
+  prompt: [[TTRS:CrystalTerminal.CodeAccepted=Code accepted.%w9
 Unlocking.%w3.%w3.%w3.%w3.%w3%e2
-Done. %w3
+Done.%w3
 ]]
   options: {
     "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit

@@ -9,7 +9,7 @@ RunHandled(
     if not talosProgress:IsVarSet("Congratulated") then
       terminal:AddString(TranslateString("TTRS:CrystalTerminal.Congratulate=Congratulations, "))
       terminal:AddString(player:GetPlayerName())
-      terminal:AddString(TranslateString("TTRS:CrystalTerminal.PastTheTest=. You have passed the test. \n"))
+      terminal:AddString(TranslateString("TTRS:CrystalTerminal.PassedTheTest=. You have passed the test. \n"))
       talosProgress:SetVar("Congratulated")
     end
   end,

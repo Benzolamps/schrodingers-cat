@@ -11,34 +11,31 @@ terminal when (Booting and (Unlocked_Fan or LOL_Finished)) {
 
 terminal when (Tips) {
   set: LOL_Needed
-  prompt:
-  [[TTRS:CrystalTerminal.FanTip=
+  prompt: [[TTRS:CrystalTerminal.FanTip=
 %e2This terminal will help you unlocking the <span class="strong">&lt;Fan&gt;</span> item! .%w3.%w3.%w8
 Ready to start? %w3%w3%w8
 ]]
   options: {
-    "TTRS:CrystalTerminal.Ready=Yes, I am ready!"   short: "TTRS:CrystalTerminal.ReadyShort=Ready"    next: Image
-    "TTRS:CrystalTerminal.NotYet=Not yet!"          short: "TTRS:CrystalTerminal.Exit=Exit"           next: Exit
+    "TTRS:CrystalTerminal.Ready=Yes, I am ready!" short: "TTRS:CrystalTerminal.ReadyShort=Ready" next: Image
+    "TTRS:CrystalTerminal.NotYet=Not yet!" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
   }
 }
 
 terminal when (Image) {
-  text:
-  [[TTRS:notrans=%e3]]
-    options: {
+  text: [[TTRS:notrans=%e3]]
+  options: {
     "" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
   }
 }
 
 terminal when (Success) {
-  set: Unlocked_Fan 
-  prompt:
-  [[TTRS:CrystalTerminal.CongratulateFan=
+  set: Unlocked_Fan
+  prompt: [[TTRS:CrystalTerminal.CongratulateFan=
 %e1Congratulations! You have unlocked the <span class="strong">&lt;Fan&gt;</span> item! %s0.%w3.%w3.%w8
 >]]
   options: {
-    "TTRS:CrystalTerminal.Exit=Exit"          short: "TTRS:CrystalTerminal.Exit=Exit"       next: Exit
-  } 
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Exit) {

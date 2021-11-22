@@ -6,7 +6,7 @@ local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
 character:Disappear(true)
 if talosProgress:IsVarSet("Unlocked_Time") then
   character:LeaveTalosMessage(
-    "TTRS:CrystalMessage:010=Do not thank me, because I am another version of you.",
+    "TTRS:CrystalMessage.010=Do not thank me, because I am another version of you.",
     player:GetPlayerName() .. " v45.32.7689",
     "custom",
     messageMarker
@@ -44,7 +44,7 @@ else
   character:PlayAnim("QRPaint_Altar")
   Wait(Delay(1))
   character:LeaveTalosMessage(
-    "TTRS:CrystalMessage:010=Do not thank me, because I am another version of you.",
+    "TTRS:CrystalMessage.010=Do not thank me, because I am another version of you.",
     player:GetPlayerName() .. " v45.32.7689",
     "custom",
     messageMarker

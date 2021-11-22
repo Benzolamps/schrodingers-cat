@@ -58,7 +58,7 @@ terminal when (Request_Leave and not Cat_Free) {
     "TTRS:CrystalTerminal.ContinueFinding=I want to continue finding my cat."
     short: "TTRS:CrystalTerminal.NotReadyLeaveShort=No"
     next: Exit
-    "TTRS:CrystalTerminal.GiveeUpFinding=OK! It is not the whole of my life."
+    "TTRS:CrystalTerminal.GiveUpFinding=OK! It is not the whole of my life."
     short: "TTRS:CrystalTerminal.LeaveWithoutDelay.Short=Yes"
     next: Spaceship_Intro
   }

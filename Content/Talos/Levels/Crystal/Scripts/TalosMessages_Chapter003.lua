@@ -8,7 +8,7 @@ character:Disappear(true)
 
 if not talosProgress:IsVarSet("TalosMessage18") then
   character:LeaveTalosMessage(
-    "TTRS:CrystalMessage:018=But I finished it prefectly.",
+    "TTRS:CrystalMessage.018=But I finished it prefectly.",
     player:GetPlayerName() .. " v25.6.9867",
     "custom",
     messageMarker

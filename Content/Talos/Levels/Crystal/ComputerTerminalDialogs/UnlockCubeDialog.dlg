@@ -1,114 +1,116 @@
 # Unlocked_Cube代表是否解锁了方块
 
 terminal when (Booting and not Unlocked_Cube) {
-	notext
-	goto: Tips
+  notext
+  goto: Tips
 }
 
 terminal when (Booting and Unlocked_Cube) {
-	notext
-	setlocal: Success
-	goto: Question
+  notext
+  setlocal: Success
+  goto: Question
 }
 
 terminal when (Tips) {
-	prompt:
-	[[TTRS:CrystalTerminal.CubeTip=This terminal will help you unlocking the <span class="strong">&lt;Hexahedron&gt;</span> item! .%w3.%w3.%w8
+  prompt:
+  [[TTRS:CrystalTerminal.CubeTip=This terminal will help you unlocking the <span class="strong">&lt;Hexahedron&gt;</span> item! .%w3.%w3.%w8
 Ready to start? %w3%w3%w8
 ]]
-	setlocal: Question1
-	options: {
-		"TTRS:CrystalTerminal.Ready=Yes, I am ready!" 	short: "TTRS:CrystalTerminal.ReadyShort=Ready" 		next: Question
-		"TTRS:CrystalTerminal.NotYet=Not yet!" 			short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}
+  setlocal: Question1
+  options: {
+    "TTRS:CrystalTerminal.Ready=Yes, I am ready!" short: "TTRS:CrystalTerminal.ReadyShort=Ready" next: Question
+    "TTRS:CrystalTerminal.NotYet=Not yet!" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Question1 and Question) {
-	prompt:
-	[[TTRS:notrans=
+  prompt:
+  [[TTRS:notrans=
 Q1 of 3: %w5
 2+2=? %w5
 >]]
-	clear: Question1
-	setlocal: Question2
-	options: {
-		"TTRS:CrystalTerminal.Two=It's 2." 					short: "TTRS:notrans=2" 							next: False
-		"TTRS:CrystalTerminal.Four=It's 4." 				short: "TTRS:notrans=4" 							next: Question
-		"TTRS:CrystalTerminal.Infinity=Infinity." 			
-		short: "TTRS:CrystalTerminal.InfinityShort=Infinity" 		next: False
-		"TTRS:CrystalTerminal.NotSure=I don't know." 		
-		short: "TTRS:CrystalTerminal.NotSureShort=Not sure" 		next: False
-		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}     
+  clear: Question1
+  setlocal: Question2
+  options: {
+    "TTRS:CrystalTerminal.Two=It's 2." short: "TTRS:notrans=2" next: False
+    "TTRS:CrystalTerminal.Four=It's 4." short: "TTRS:notrans=4" next: Question
+    "TTRS:CrystalTerminal.Infinity=Infinity."
+    short: "TTRS:CrystalTerminal.InfinityShort=Infinity" next: False
+    "TTRS:CrystalTerminal.NotSure=I don't know."
+    short: "TTRS:CrystalTerminal.NotSureShort=Not sure" next: False
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Question2 and Question) {
-	prompt:
-	[[TTRS:notrans=
+  prompt: [[TTRS:notrans=
 Q2 of 3: %w5
 7!=? %w5
 >]]
-	clear: Question2
-	setlocal: Question3
-	options: {
-		"TTRS:CrystalTerminal.Seven=It's 7." 				short: "TTRS:notrans=7" 			next: False
-		"TTRS:CrystalTerminal.5040=It's 5040." 				short: "TTRS:notrans=5040" 			next: Question
-		"TTRS:CrystalTerminal.49=It's 49." 					short: "TTRS:notrans=49" 			next: False
-		"TTRS:CrystalTerminal.Infinity=Infinity." 			
-		short: "TTRS:CrystalTerminal.InfinityShort=Infinity" 		next: False
-		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}     
+  clear: Question2
+  setlocal: Question3
+  options: {
+    "TTRS:CrystalTerminal.Seven=It's 7." short: "TTRS:notrans=7" next: False
+    "TTRS:CrystalTerminal.5040=It's 5040." short: "TTRS:notrans=5040" next: Question
+    "TTRS:CrystalTerminal.49=It's 49." short: "TTRS:notrans=49" next: False
+    "TTRS:CrystalTerminal.Infinity=Infinity."
+    short: "TTRS:CrystalTerminal.InfinityShort=Infinity" next: False
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Question3 and Question) {
-	prompt:
-	[[TTRS:CrystalTerminal.CubeQ3=
+  prompt: [[TTRS:CrystalTerminal.CubeQ3=
 Q3 of 3: %w5
 Which month has 28 days?
 >]]
-	clear: Question3
-	setlocal: Success
-	options: {
-		"TTRS:CrystalTerminal.February=It's February." short: "TTRS:CrystalTerminal.FebruaryShort=February" next: False
-		"TTRS:CrystalTerminal.FebruaryLeap=February in leap year." 
-		short: "TTRS:CrystalTerminal.FebruaryLeapShort=February in leap year" next: False
-		"TTRS:CrystalTerminal.FebruaryCommon=February in common year." 
-		short: "TTRS:CrystalTerminal.FebruaryCommonShort=February in common year" next: False
-		"TTRS:CrystalTerminal.EveryMonth=Every month in the year." 
-		short: "TTRS:CrystalTerminal.EveryMonthShort=Every month in the year" next: Question
-		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}
+  clear: Question3
+  setlocal: Success
+  options: {
+    "TTRS:CrystalTerminal.February=It's February."
+    short: "TTRS:CrystalTerminal.FebruaryShort=February"
+    next: False
+    "TTRS:CrystalTerminal.FebruaryLeap=February in leap year."
+    short: "TTRS:CrystalTerminal.FebruaryLeapShort=February in leap year"
+    next: False
+    "TTRS:CrystalTerminal.FebruaryCommon=February in common year."
+    short: "TTRS:CrystalTerminal.FebruaryCommonShort=February in common year"
+    next: False
+    "TTRS:CrystalTerminal.EveryMonth=Every month in the year."
+    short: "TTRS:CrystalTerminal.EveryMonthShort=Every month in the year"
+    next: Question
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit"
+    next: Exit
+  }
 }
 
 terminal when (Success and Question) {
-	set: Unlocked_Cube 
-	prompt:
-	[[TTRS:CrystalTerminal.CongratulateCube=
+  set: Unlocked_Cube
+  prompt: [[TTRS:CrystalTerminal.CongratulateCube=
 %e1Congratulations! You have unlocked the <span class="strong">&lt;Hexahedron&gt;</span> item! %s0.%w3.%w3.%w8
 >]]
-	options: {
-		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	} 
+  options: {
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (False and not Once) {
-	notext
-	setlocal: Once 
-	goto: Question
+  notext
+  setlocal: Once
+  goto: Question
 }
 
 terminal when (False and Once) {
-	prompt:
-	[[TTRS:CrystalTerminal.PityCube=
-Unfortunately! The <span class="strong">&lt;Hexahedron&gt;</span> item wasn't unlocked!  %s0.%w3.%w3.%w8
+  prompt:
+  [[TTRS:CrystalTerminal.PityCube=
+Unfortunately! The <span class="strong">&lt;Hexahedron&gt;</span> item wasn't unlocked! %s0.%w3.%w3.%w8
 >]]
-	options: {
-		"TTRS:CrystalTerminal.Exit=Exit" 					short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}
+  options: {
+    "TTRS:CrystalTerminal.Exit=Exit" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Exit) {
-	notext
-	exit
+  notext
+  exit
 }
-

@@ -8,7 +8,7 @@ character:Disappear(true)
 
 if not talosProgress:IsVarSet("TalosMessage014") then
   character:LeaveTalosMessage(
-    "TTRS:CrystalMessage:014=Another star, is protected by a code. I've searched all the corners here, but no clue was found.",
+    "TTRS:CrystalMessage.014=Another star, is protected by a code. I've searched all the corners here, but no clue was found.",
     player:GetPlayerName() .. " v4.7.5432",
     "custom",
     messageMarker

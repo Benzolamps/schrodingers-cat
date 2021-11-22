@@ -1,12 +1,11 @@
 # Unlocked_Time代表是否解锁了时间记录仪
 
 terminal when (Unlock_Time) {
-	text:
-	[[TTRS:CrystalTerminal.TimeTip=Hello! .%w3.%w3.%w8
+  text: [[TTRS:CrystalTerminal.TimeTip=Hello! .%w3.%w3.%w8
 This terminal will help you unlocking the <span class="strong">&lt;Time Recorder&gt;</span> item! .%w3.%w3.%w8
 Please wait.%w8.%w8.%w8
 %w8%w8%w8
 Congratulations! You have unlocked the <span class="strong">&lt;Time Recorder&gt;</span>%s0 item!]]
-	set: Unlocked_Time
-	goto: exit
+  set: Unlocked_Time
+  goto: exit
 }

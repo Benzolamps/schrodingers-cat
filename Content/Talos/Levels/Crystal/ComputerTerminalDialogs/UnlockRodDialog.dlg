@@ -38,7 +38,7 @@ terminal when (Question and Try_Once) {
 2.%w1.%w1.%w1
 1.%w1.%w1.%w1
 
-Six numbers. Their sum equals to 100, and each of them contains 6. What is the numbers? .%w3.%w3.%w8
+Six numbers, sum is 100, each containing a 6. What are the six numbers? .%w3.%w3.%w8
 
 Need some Hints? %w8
 >]]
@@ -122,25 +122,25 @@ terminal when (Result and not Number_True) {
 terminal when (Options) {
   notext
   options: {
-    "TTRS:notrans=6" short: "TTRS:notrans=6" next: Number_6
-    "TTRS:notrans=16" short: "TTRS:notrans=16" next: Number_16
-    "TTRS:notrans=26" short: "TTRS:notrans=26" next: Number_Other
-    "TTRS:notrans=36" short: "TTRS:notrans=36" next: Number_Other
-    "TTRS:notrans=46" short: "TTRS:notrans=46" next: Number_Other
-    "TTRS:notrans=56" short: "TTRS:notrans=56" next: Number_Other
-    "TTRS:notrans=60" short: "TTRS:notrans=60" next: Number_60
-    "TTRS:notrans=61" short: "TTRS:notrans=61" next: Number_Other
-    "TTRS:notrans=62" short: "TTRS:notrans=62" next: Number_Other
-    "TTRS:notrans=63" short: "TTRS:notrans=63" next: Number_Other
-    "TTRS:notrans=64" short: "TTRS:notrans=64" next: Number_Other
-    "TTRS:notrans=65" short: "TTRS:notrans=65" next: Number_Other
-    "TTRS:notrans=66" short: "TTRS:notrans=66" next: Number_Other
-    "TTRS:notrans=67" short: "TTRS:notrans=67" next: Number_Other
-    "TTRS:notrans=68" short: "TTRS:notrans=68" next: Number_Other
-    "TTRS:notrans=69" short: "TTRS:notrans=69" next: Number_Other
-    "TTRS:notrans=76" short: "TTRS:notrans=76" next: Number_Other
-    "TTRS:notrans=86" short: "TTRS:notrans=86" next: Number_Other
-    "TTRS:notrans=96" short: "TTRS:notrans=96" next: Number_Other
+    "TTRS:notrans=6" next: Number_6
+    "TTRS:notrans=16" next: Number_16
+    "TTRS:notrans=26" next: Number_Other
+    "TTRS:notrans=36" next: Number_Other
+    "TTRS:notrans=46" next: Number_Other
+    "TTRS:notrans=56" next: Number_Other
+    "TTRS:notrans=60" next: Number_60
+    "TTRS:notrans=61" next: Number_Other
+    "TTRS:notrans=62" next: Number_Other
+    "TTRS:notrans=63" next: Number_Other
+    "TTRS:notrans=64" next: Number_Other
+    "TTRS:notrans=65" next: Number_Other
+    "TTRS:notrans=66" next: Number_Other
+    "TTRS:notrans=67" next: Number_Other
+    "TTRS:notrans=68" next: Number_Other
+    "TTRS:notrans=69" next: Number_Other
+    "TTRS:notrans=76" next: Number_Other
+    "TTRS:notrans=86" next: Number_Other
+    "TTRS:notrans=96" next: Number_Other
   }
 }
 

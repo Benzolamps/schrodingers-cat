@@ -18,6 +18,5 @@ local function Lighting()
 end
 
 RainAnimator:StartAnimation("On")
-worldInfo:SetMusic("Ambient", resRainyAmbient) 
+worldInfo:SetMusic("Ambient", resRainyAmbient)
 while true do Lighting() end
-

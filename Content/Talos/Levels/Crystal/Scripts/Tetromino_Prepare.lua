@@ -2,9 +2,9 @@
 local talosProgress = nexGetTalosProgress(worldInfo)
 
 -- for Entrance
-talosProgress:StoreTetromino("DI99")    
-talosProgress:StoreTetromino("DO98")  
-talosProgress:StoreTetromino("DT97")    
+talosProgress:StoreTetromino("DI99")
+talosProgress:StoreTetromino("DO98")
+talosProgress:StoreTetromino("DT97")
 talosProgress:StoreTetromino("DT96")
 talosProgress:StoreTetromino("DZ95")
 

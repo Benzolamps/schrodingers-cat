@@ -4,6 +4,8 @@ local talosProgress = nexGetTalosProgress(worldInfo)
 local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
 
 if talosProgress:IsVarSet("Unlocked_Cube") then
+  talosProgress:AssureUnlockedMechanic("MechanicCube")
+  prjOnMechanicLockingChanged(worldInfo)
   terminal:EnableASCIIAnimation(0)
 else
   terminal:EnableASCIIAnimation(1)

@@ -10,4 +10,4 @@ RunHandled(
     end
     detector:Recharge()
   end
-)  
+)

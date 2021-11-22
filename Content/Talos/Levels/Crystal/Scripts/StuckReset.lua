@@ -8,4 +8,4 @@ RunHandled(
     player:ShowMessageOnHUD("TTRS:Hint.HoldToReset=Hold {plcmdHome} to reset")
     detector:Recharge()
   end
-)    
+)

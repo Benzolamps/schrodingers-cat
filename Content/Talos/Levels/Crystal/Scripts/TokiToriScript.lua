@@ -1,7 +1,7 @@
 RunHandled(
   WaitForever,
   OnEvery(Event(terminal.Started)),
-  function ()
+  function()
     for i = 1, 5, 1 do
       Wait(CustomEvent(terminal, "TerminalEvent_" .. i))
       Wait(Delay(0.5))

@@ -1,4 +1,5 @@
 Snowman:EnableUsage()
 Wait(Event(Snowman.Used))
+sound:PlayOnce()
 Wait(Delay(1))
 worldInfo:ForceMusic("Event", musicJingle)

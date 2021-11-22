@@ -19,16 +19,15 @@ RunHandled(
   On(Event(detector.Activated)),
   function ()
     worldInfo:ForceMusic("Event", musicCat)
-    talBackupAndSaveTalosProgress(worldInfo)
+    prjBackupAndSaveGameProgress(worldInfo)
     talosProgress:SetVar("Cat_Free")
     catRunAway = true
     catRun:PlayOnce()
     cat:NewClearState(0)
     cat:AddAnimation("Cat_Run_02", true, false, 1, 1)
     catMover:PlayAnimWait("Default")
-    Wait(Delay(20))
+    Wait(Delay(7))
     cat:Disappear()
     disappear:PlayOnce()
   end
 )
-

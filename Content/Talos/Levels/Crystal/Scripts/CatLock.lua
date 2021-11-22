@@ -9,4 +9,3 @@ else
 end
 Wait(Event(Barrier.Destroyed))
 talosProgress:SetVar("Cat_Unlocked")
- 

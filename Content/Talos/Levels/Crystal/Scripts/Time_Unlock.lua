@@ -4,19 +4,22 @@ local talosProgress = nexGetTalosProgress(worldInfo)
 local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
 
 character:Disappear(true)
-if talosProgress:IsVarSet("Unlocked_Time") then 
+if talosProgress:IsVarSet("Unlocked_Time") then
   character:LeaveTalosMessage(
     "TTRS:CrystalMessage:010=Do not thank me, because I am another version of you.",
-    player:GetPlayerName().." v45.32.7689",
+    player:GetPlayerName() .. " v45.32.7689",
     "custom",
     messageMarker
   )
+  talosProgress:AssureUnlockedMechanic("MechanicTime")
+  prjOnMechanicLockingChanged(worldInfo)
 else
+  Wait(Event(arranger.Solved))
   timeUseModel:EnableUsage()
   Wait(Event(timeUseModel.Used))
   sound:PlayOnce()
   Wait(Delay(0.5))
-  character:SetCharacterName(player:GetPlayerName().." v45.32.7689")
+  character:SetCharacterName(player:GetPlayerName() .. " v45.32.7689")
   character:Appear(true)
   character:StartFadingIn(1)
   character:SetLookTarget(player)
@@ -42,7 +45,7 @@ else
   Wait(Delay(1))
   character:LeaveTalosMessage(
     "TTRS:CrystalMessage:010=Do not thank me, because I am another version of you.",
-    player:GetPlayerName().." v45.32.7689",
+    player:GetPlayerName() .. " v45.32.7689",
     "custom",
     messageMarker
   )

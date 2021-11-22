@@ -5,10 +5,7 @@ local codeCache = -1
 local playback = false
 
 local function PuppetEntityCount()
-  local all = worldInfo:GetAllEntitiesOfClass("CPuppetEntity")
-  local x = 0
-  for i, puppet in ipairs(all) do x = x + 1 end
-  return x
+  return #worldInfo:GetAllEntitiesOfClass("CPuppetEntity")
 end
 Wait(Event(worldInfo.PlayerBorn))
 sum = PuppetEntityCount()

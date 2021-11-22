@@ -4,31 +4,31 @@ terminal when (Booting) {
 }
 
 terminal when (TokiTori1) {
-  text: "TTRS:notran=%e1"
-  	options: {
-		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori2
-	}
+  text: "TTRS:notrans=%e1"
+    options: {
+    "" short: "TTRS:CrystalTerminal.Next=Next" next: TokiTori2
+  }
 }
 
 terminal when (TokiTori2) {
-  text: "TTRS:notran=%e2"
-  	options: {
-		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori3
-	}
+  text: "TTRS:notrans=%e2"
+    options: {
+    "" short: "TTRS:CrystalTerminal.Next=Next" next: TokiTori3
+  }
 }
 
 terminal when (TokiTori3) {
-  text: "TTRS:notran=%e3"
-  	options: {
-		"" short: "TTRS:CrystalTerminal.Next=Next" 			next: TokiTori4
-	}
+  text: "TTRS:notrans=%e3"
+    options: {
+    "" short: "TTRS:CrystalTerminal.Next=Next" next: TokiTori4
+  }
 }
 
 terminal when (TokiTori4) {
-  text: "TTRS:notran=%e4"
-  	options: {
-		"" short: "TTRS:CrystalTerminal.Exit=Exit" 			next: Exit
-	}
+  text: "TTRS:notrans=%e4"
+    options: {
+    "" short: "TTRS:CrystalTerminal.Exit=Exit" next: Exit
+  }
 }
 
 terminal when (Exit) {

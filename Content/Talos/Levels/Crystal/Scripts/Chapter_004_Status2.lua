@@ -2,13 +2,13 @@
 local talosProgress = nexGetTalosProgress(worldInfo)
 
 -- player : CPlayerPuppetEntity
-local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()     
-      
+local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
+
 local function ExistClass(detector, str)
   local all = worldInfo:GetAllEntitiesOfClass(str)
   -- item : CCarriableRodItemEntity
   for i, item in ipairs(all) do
-    local vItem = item:GetActualPlacement():GetVect() 
+    local vItem = item:GetActualPlacement():GetVect()
     if detector:IsPointInArea(vItem, 0.5) then
       return 1
     end
@@ -37,12 +37,12 @@ else
           if fan:IsActive() then
             break
           end
-        end        
+        end
         talosProgress:SetVar("Status2")
         Wait(Delay(2))
-        player:ShowMessageOnHUD("TTRS:CrystalHint.Saved=Saved!")        
-      end      
-      WaitForever()      
+        player:ShowMessageOnHUD("TTRS:CrystalHint.Saved=Saved!")
+      end
+      WaitForever()
     end,
     On(Event(tetromino.Picked)),
     function ()

@@ -19,7 +19,7 @@ RunHandled(
       chapterEndPuzzle:Start()
     end
   end,
-  	
+
   OnEvery(Event(detector.Activated)),
   function ()
     if talosProgress:GetCodeValue("End_Arranger") == 3 then
@@ -30,5 +30,3 @@ RunHandled(
     detector:Recharge()
   end
 )
-
-

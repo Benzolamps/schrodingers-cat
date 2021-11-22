@@ -2,10 +2,7 @@
 local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
 
 local function PuppetEntityCount()
-local all = worldInfo:GetAllEntitiesOfClass("CPuppetEntity")
-  local x = 0
-  for i, puppet in ipairs(all) do x = x + 1 end
-  return x
+  return #worldInfo:GetAllEntitiesOfClass("CPuppetEntity")
 end
 
 local sum = PuppetEntityCount()
@@ -13,7 +10,7 @@ local sum = PuppetEntityCount()
 local function ExistEntityInArea(entityStr, areaDetector)
   local all = worldInfo:GetAllEntitiesOfClass(entityStr)
   -- entity : CCarriableRodItemEntity
-  for i, entity in ipairs(all) do
+  for _, entity in ipairs(all) do
     local vEntity = entity:GetActualPlacement():GetVect()
     if areaDetector:IsPointInArea(vEntity, 0.5) then return 1 end
   end

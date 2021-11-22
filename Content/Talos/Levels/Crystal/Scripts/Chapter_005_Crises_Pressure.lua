@@ -1,5 +1,5 @@
 RunHandled(
-  function ()
+  function()
     Wait(Event(mine.Died))
   end,
   OnEvery(Delay(0.01)),

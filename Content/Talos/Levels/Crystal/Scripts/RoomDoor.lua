@@ -1,5 +1,5 @@
 door:EnableUsage()
-RunHandled( 
+RunHandled(
   WaitForever,
   On(Event(door.Used)),
   function ()

@@ -2,6 +2,8 @@
 local talosProgress = nexGetTalosProgress(worldInfo)
 if talosProgress:IsVarSet("Unlocked_Rod") then
   terminal:EnableASCIIAnimation(0)
+  talosProgress:AssureUnlockedMechanic("MechanicRods")
+  prjOnMechanicLockingChanged(worldInfo)
 else
   if not arranger:IsSolved() then
     Wait(Event(arranger.Solved))
@@ -13,5 +15,5 @@ Wait(CustomEvent(terminal, "TerminalEvent_1"))
 Wait(Event(terminal.Stopped))
 terminal:EnableASCIIAnimation(0)
 Wait(Delay(1))
-talosProgress:AssureUnlockedMechanic("MechanicRods") 
-prjOnMechanicLockingChanged(worldInfo)  
+talosProgress:AssureUnlockedMechanic("MechanicRods")
+prjOnMechanicLockingChanged(worldInfo)

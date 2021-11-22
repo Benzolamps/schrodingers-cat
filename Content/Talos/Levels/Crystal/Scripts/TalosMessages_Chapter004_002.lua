@@ -12,6 +12,6 @@ if not talosProgress:IsVarSet("TalosMessage013") then
     player:GetPlayerName() .. " v68.7.2319",
     "custom",
     messageMarker
-  )  
+  )
   talosProgress:SetVar("TalosMessage013")
 end

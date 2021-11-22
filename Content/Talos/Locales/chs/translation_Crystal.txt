@@ -1,4 +1,4 @@
-2
+﻿199
 CrystalPuzzleName.001=化敌为友
 CrystalPuzzleName.002=小月亮
 CrystalPuzzleName.003=错位节拍
@@ -100,8 +100,8 @@ CrystalTerminal.CongratulateRod=\n%e1恭喜你！你已经解锁了<span class="
 CrystalTerminal.PityRod=\n真遗憾！你输入的数字是错的！.%w3.%w3.%w8\n再次尝试？.%w3.%w3.%w8\n>
 CrystalTerminal.SixNumberHint1=\n提示1：所有的数字都不大于70。%w8\n
 CrystalTerminal.SixNumberHint2=\n提示1：所有的数字都不大于70。%w8\n\n提示2：其中有4个数字相等。%w8\n
-TTRS:CrystalTerminal.Yes=是
-TTRS:CrystalTerminal.No=否
+CrystalTerminal.Yes=是
+CrystalTerminal.No=否
 CrystalTerminal.TimeTip=这台终端将帮助你解锁<span class="strong">&lt;时间记录仪&gt;</span>道具.%w3.%w3.%w8\n请稍等.%w8.%w8.%w8\n%w8%w8%w8\n恭喜你！你已经解锁了<span class="strong">&lt;时间记录仪&gt;</span>%s0道具！
 CrystalTerminal.CodeTip=\n这个栅栏受密码保护。%w9请输入密码：%w9\n
 CrystalTerminal.CodeTry1=\n密码错误！%s0%w9\n再次尝试（还可输入2次）。%w9\n请输入密码：%w9\n
@@ -143,7 +143,7 @@ CrystalTerminal.SufficientFood=最终找到了他的猫，%w14但小猫并没有
 CrystalTerminal.HardWon=最终找到了他的猫，%w14小猫活了下来。他的努力没有白费。%w14小猫回到了他的身边。%w14他们的感情是弥足珍贵的，他们一定会珍惜彼此的。%w25\n
 CrystalTerminal.Injurd=最终找到了他的猫，%w14但小猫并没有活下来。%w14他不知道他到底做错了什么。%w14他不知道为什么小猫会因为受伤而死去。%w14小猫的离去是他的心病。%w14他好久都没有缓过神来。%w25\n
 CrystalTerminal.EatenOff=最终找到了他的猫，%w14但小猫并没有活下来。%w14他不知道他到底做错了什么。%w14他不知道为什么小猫会吃坏了肚子。%w14小猫的离去是他的心病。%w14他好久都没有缓过神来。%w25\n
-CrystalTerminal.Credits=\n\nCREDITS\n\n作者: 苯拉灯\n\n特别鸣谢：\n  iRedCraft\n  p0rtalmaster\n  Barry Mead\n  Innocentive\n  vodkins\n  Kazz\n  Rusty\n  gabberovich\n\n  .%w3.%w3.%w3.%w3.%w3.%w8%w8%w8%w8%w8%w8
+CrystalTerminal.Credits=\n\nCREDITS\n\n作者: Benzolamps\n\n特别鸣谢：\n  iRedCraft\n  p0rtalmaster\n  Barry Mead\n  Innocentive\n  vodkins\n  Kazz\n  Rusty\n  gabberovich\n\n  .%w3.%w3.%w3.%w3.%w3.%w8%w8%w8%w8%w8%w8
 Crystal.Extra.Shrimps=虾仁
 Crystal.Extra.Probiotics=益生菌
 Crystal.Extra.Iodine=碘酒

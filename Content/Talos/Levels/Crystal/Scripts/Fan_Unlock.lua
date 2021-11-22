@@ -8,13 +8,15 @@ end
 
 if talosProgress:IsVarSet("Unlocked_Fan") then
   terminal:EnableASCIIAnimation(0)
+  talosProgress:AssureUnlockedMechanic("MechanicFan")
+  prjOnMechanicLockingChanged(worldInfo)
 else
   if not arranger:IsSolved() then
     Wait(Event(arranger.Solved))
     Wait(Delay(1))
   end
   terminal:EnableASCIIAnimation(1)
-end  
+end
 
 RunHandled(
   WaitForever,
@@ -36,7 +38,7 @@ RunHandled(
     local path = Depfile("Content/Talos/Levels/Crystal/Texture/lol.tex")
     terminal:ShowImageDocument(path)
   end,
-  On(CustomEvent("LOL")),
+  OnEvery(CustomEvent("LOL")),
   function ()
     print("LOL")
     if lolenabled then

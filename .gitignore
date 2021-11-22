@@ -1,0 +1,15 @@
+/.idea/
+/Bin/
+/BonusContent/
+/Log/
+/Temp/
+/UserData/
+/UserCfg.lua
+/*.git.zip
+*.gro
+/Content/ReplaceHistory.txt
+/Content/Shared/
+/Content/Talos/*.dat
+/Content/Talos/Config/
+/Content/Talos/Scripts/ApplySetting*.lua
+/Content/Talos/Scripts/RunAutomatedBenchmark.lua

@@ -4,7 +4,7 @@ local player = Wait(Event(worldInfo.PlayerBorn)):GetBornPlayer()
 local function ExistRodInArea()
   local all = worldInfo:GetAllEntitiesOfClass("CCarriableRodItemEntity")
   -- rod : CCarriableRodItemEntity
-  for i, rod in ipairs(all) do
+  for _, rod in ipairs(all) do
     local vRod = rod:GetActualPlacement():GetVect()
     if detector:IsPointInArea(vRod, 0.5) then
       return 1
@@ -24,5 +24,4 @@ RunHandled(
     end
     detector:Recharge()
   end
-)  
-   
+)

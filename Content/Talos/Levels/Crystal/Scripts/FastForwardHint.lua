@@ -7,7 +7,7 @@ while true do
   if talosProgress:IsVarSet("FastForward_Hinted") then break end
   Wait(Delay(0.1))
   if worldInfo:IsTimeSwitchActive() then
-    for i = 0, 15, 1 do
+    for _ = 0, 15, 1 do
       Wait(Delay(2))
       player:ShowMessageOnHUD("TTRS:CrystalHint.FastFwd=Fast forward by holding {plcmdFastForward} ")
     end

@@ -9,14 +9,17 @@ RunHandled(
   function ()
     local velocity = player:GetLinearVelocity()
     local altitude = player:GetPlacement().vy
-    if altitude < waterLevel then -- check altitude to detect if player is above or below water
+    if altitude < waterLevel then
+      -- check altitude to detect if player is above or below water
       bAbove = 0
     else
       bAbove = 1
     end
-	  
-    if bAbove ~= bAboveLastFrame then -- if above/below water status was changed since last frame:
-      if velocity.y < -5 then -- play appropriate sound for current direction and speed
+
+    if bAbove ~= bAboveLastFrame then
+      -- if above/below water status was changed since last frame:
+      if velocity.y < -5 then
+        -- play appropriate sound for current direction and speed
         DiveInSound:PlayOnce()
       end
       if velocity.y > -5 and velocity.y < 5 then

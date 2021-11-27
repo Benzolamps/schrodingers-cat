@@ -14,7 +14,9 @@ if talosProgress:IsVarSet("Unlocked_Time") then
   talosProgress:AssureUnlockedMechanic("MechanicTime")
   prjOnMechanicLockingChanged(worldInfo)
 else
-  Wait(Event(arranger.Solved))
+  if not arranger:IsSolved() then
+    Wait(Event(arranger.Solved))
+  end
   timeUseModel:EnableUsage()
   Wait(Event(timeUseModel.Used))
   sound:PlayOnce()

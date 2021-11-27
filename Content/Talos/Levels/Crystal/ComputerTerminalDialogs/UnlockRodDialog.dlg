@@ -45,7 +45,7 @@ Need some Hints? %w8
   setlocal: Answer1
     options: {
     "TTRS:CrystalTerminal.Yes=Yes" short: "TTRS:CrystalTerminal.Yes=Yes" next: Hint
-    "TTRS:CrystalTerminal.No=No" hort: "TTRS:CrystalTerminal.No=No" next: Answer
+    "TTRS:CrystalTerminal.No=No" short: "TTRS:CrystalTerminal.No=No" next: Answer
   }
 }
 
